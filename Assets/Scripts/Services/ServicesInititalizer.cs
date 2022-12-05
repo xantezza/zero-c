@@ -11,6 +11,8 @@ namespace Services
         //foreground execution order 
         private void Awake()
         {
+            Application.targetFrameRate = 30;
+
             DontDestroyOnLoad(this);
 
             var servicesCount = _servicesKeeper.Services.Length;
